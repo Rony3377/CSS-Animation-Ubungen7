@@ -1,0 +1,133 @@
+@media screen and (max-width: 500px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  header {
+    width: 100%;
+  }
+  .h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  @keyframes header {
+    0% {
+      background-color: sandybrown;
+    }
+    50% {
+      background-color: rgb(155, 82, 133);
+    }
+    100% {
+      background-color: rgb(51, 25, 43);
+    }
+  }
+  .feld1 nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 100px;
+    overflow: auto;
+  }
+  .feld1 nav img {
+    width: 50px;
+  }
+  nav {
+    border: steelblue solid 1px;
+    background-color: violet;
+  }
+  /*****nav img*****/
+  nav img {
+    animation-name: bild;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  /*****nav img keyfram*****/
+  @keyframes bild {
+    0% {
+      border-radius: 25%;
+      filter: sepia(0);
+    }
+    100% {
+      border-radius: 100%;
+      filter: sepia(1);
+    }
+  }
+  .box1 span {
+    animation-name: span;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  /*****header box1  span logo keyfram*****/
+  @keyframes span {
+    0% {
+      filter: brightness(0);
+    }
+    50% {
+      filter: brightness(1);
+    }
+    100% {
+      bfilter: brightness(2);
+    }
+  }
+  /*****main box3 *****/
+  .box3 {
+    animation-name: main;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  /*****main box3 keyfram *****/
+  @keyframes main {
+    0% {
+      color: rgb(27, 25, 22);
+    }
+    50% {
+      color: rgb(235, 11, 160);
+    }
+    100% {
+      color: rgb(51, 25, 43);
+    }
+  }
+  /*****main box3 text *****/
+  .m1 {
+    grid-column-start: 1;
+
+    border: rgb(140, 127, 255) solid 1px;
+    height: 110px;
+  }
+  .m2 {
+    border: rgb(127, 255, 148) solid 1px;
+    height: 110px;
+  }
+  .m3 {
+    border: rgb(255, 127, 249) solid 1px;
+    height: 80px;
+  }
+  /*****footer box4 *****/
+  .box4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    animation-name: footer;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  /*****footer box4 keyfram *****/
+  @keyframes footer {
+    0% {
+      filter: brightness(0);
+    }
+    50% {
+      filter: brightness(1);
+    }
+    100% {
+      bfilter: brightness(2);
+    }
+  }
+}

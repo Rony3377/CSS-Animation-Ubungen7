@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="desktop.css" />
+    <link rel="stylesheet" href="mobil.css" />
+    <title>animation übungen</title>
+  </head>
+  <style>
+  
+    /*****body*****/
+    body{
+      background-color: rgb(185, 168, 176);
+    }
+     /*****nav*****/
+    nav{
+      border:steelblue solid 1px;
+      background-color:violet;
+    }
+    /*****nav img*****/
+    nav img{
+      animation-name: bild;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+    }
+    /*****nav img keyfram*****/
+    @keyframes bild {
+      0% {
+        border-radius: 25%;
+        filter: sepia(0);
+     
+      }
+      100% {
+        border-radius: 100%;
+        filter: sepia(1);
+      }
+     }
+      /*****header *****/
+    
+   
+     header .h1 {
+      height: 100px;
+      display: flex;
+      animation-name: header;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+    }
+    /*****header h1 keyfram*****/
+    @keyframes header {
+    0% {
+      background-color: sandybrown;
+    }
+    50% {
+      background-color: rgb(155, 82, 133);
+    }
+    100% {
+      background-color: rgb(51, 25, 43);
+    }
+  }
+     /*****header box1 span logo*****/
+     .box1 span{
+      
+       animation-name: span;
+       animation-duration: 3s;
+       animation-iteration-count: infinite;
+       animation-timing-function: ease;
+    }
+    /*****header box1  span logo keyfram*****/
+    @keyframes span {
+      0% {
+        filter: brightness(0);
+      }
+      50%{
+        filter: brightness(1);
+      }
+      100% {
+        bfilter: brightness(2);
+      }
+     }
+     
+     /*****main box3 *****/
+    .box3{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      animation-name: main;
+       animation-duration: 3s;
+       animation-iteration-count: infinite;
+       animation-timing-function: ease;
+    }
+     /*****main box3 keyfram *****/
+    @keyframes main {
+      0% {
+        color:rgb(27, 25, 22);
+      }
+      50%{
+        color:rgb(235, 11, 160);
+      }
+      100% {
+        color:rgb(51, 25, 43);
+      }
+     }
+      /*****main box3 text *****/
+    .m1{
+      grid-column-start: 1;
+      grid-row-start: 1;
+      border:rgb(140, 127, 255) solid 1px;
+      height: 110px;
+    }
+    .m2{
+      grid-column-start: 2;
+      grid-row-start: 2;
+      border:rgb(127, 255, 148) solid 1px;
+      height: 110px;
+    }
+    .m3{
+      grid-column: 1/span 2;
+      grid-row-start:3;
+      border:rgb(255, 127, 249) solid 1px;
+      height: 80px;
+    }
+     /*****footer box4 *****/
+    .box4{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      animation-name: footer;
+       animation-duration: 3s;
+       animation-iteration-count: infinite;
+       animation-timing-function: ease;
+    }
+    /*****footer box4 keyfram *****/
+    @keyframes footer {
+      0% {
+        filter: brightness(0);
+      }
+      50%{
+        filter: brightness(1);
+      }
+      100% {
+        bfilter: brightness(2);
+      }
+     }
+  </style>
+  <body>
+    <header>
+    <div class="h1">
+     <div class="box1">
+      <span><img src="lo.png" /></span>
+     </div>
+     <div class="box2">
+      <input type="search" /> 
+     </div>
+    </div>
+    </header>
+     <div class="feld1">
+      <nav>
+        <img src="https://th.bing.com/th/id/OIP.Np3zMqIlLlcqnRuehpK0mwHaE6?pid=ImgDet&w=474&h=314&rs=1" />
+        <img src="https://cdn.fischer.cz/Images/000046/marsa-alam-0_1200x0.jpg" />
+        <img src="https://www.aviontourism.com/images/1920-900-fix/32fc5d0e-2157-4449-ab0a-b682c19b3c04" />
+      </nav>
+      <main>
+      <div class="box3">
+        <div class="m1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto repellat incidunt laudantium molestias, illo suscipit ut a dolorum! Laboriosam doloribus mollitia vitae ut. Beatae illum enim voluptates labore optio?
+        </div>
+        <div class="m2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto repellat incidunt laudantium molestias, illo suscipit ut a dolorum! Laboriosam doloribus mollitia vitae ut. Beatae illum enim voluptates labore optio?
+        </div>
+        <div class="m3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto repellat incidunt laudantium molestias, illo suscipit ut a dolorum! Laboriosam doloribus mollitia vitae ut. Beatae illum enim voluptates labore optio?
+        </div>
+      </main>
+     </div>
+    <footer>
+     <div class="box4">
+       <img src="f.png" />
+       <img src="t.png" />
+       <img src="i.png" />
+     </div>
+    </footer>
+  </body>
+</html>

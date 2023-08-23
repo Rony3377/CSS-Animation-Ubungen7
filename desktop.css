@@ -1,0 +1,135 @@
+@media screen and (min-width: 501px) {
+  body {
+    background-color: rgb(185, 168, 176);
+  }
+  /*****feld1 inthalt nav und main *****/
+  .feld1 {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+
+  nav {
+    border: steelblue solid 1px;
+    background-color: violet;
+  }
+  nav img {
+    width: 100%;
+    animation-name: bild;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  @keyframes bild {
+    0% {
+      border-radius: 25%;
+      filter: sepia(0);
+    }
+    100% {
+      border-radius: 100%;
+      filter: sepia(1);
+    }
+  }
+  .h1 {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    animation-name: header;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  @keyframes header {
+    0% {
+      background-color: sandybrown;
+    }
+    50% {
+      background-color: rgb(155, 82, 133);
+    }
+    100% {
+      background-color: rgb(51, 25, 43);
+    }
+  }
+  .box1 span {
+    animation-name: span;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  @keyframes span {
+    0% {
+      filter: brightness(0);
+    }
+    50% {
+      filter: brightness(1);
+    }
+    100% {
+      bfilter: brightness(2);
+    }
+  }
+
+  .box2 {
+    margin-top: 20px;
+  }
+  .feld1 {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+  .box3 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    animation-name: main;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  @keyframes main {
+    0% {
+      color: rgb(27, 25, 22);
+    }
+    50% {
+      color: rgb(235, 11, 160);
+    }
+    100% {
+      color: rgb(51, 25, 43);
+    }
+  }
+  .m1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    border: rgb(140, 127, 255) solid 1px;
+    height: 110px;
+  }
+  .m2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: rgb(127, 255, 148) solid 1px;
+    height: 110px;
+  }
+  .m3 {
+    grid-column: 1 / span 2;
+    grid-row-start: 3;
+    border: rgb(255, 127, 249) solid 1px;
+    height: 80px;
+  }
+  .box4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    animation-name: footer;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  @keyframes footer {
+    0% {
+      filter: brightness(0);
+    }
+    50% {
+      filter: brightness(1);
+    }
+    100% {
+      bfilter: brightness(2);
+    }
+  }
+}
